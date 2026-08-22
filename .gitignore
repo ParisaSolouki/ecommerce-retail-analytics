@@ -1,0 +1,13 @@
+# Raw data files
+data/raw/
+data/raw.zip
+
+# OS files
+.DS_Store
+
+# Python / Jupyter temporary files
+__pycache__/
+.ipynb_checkpoints/
+
+# VS Code local settings
+.vscode/
