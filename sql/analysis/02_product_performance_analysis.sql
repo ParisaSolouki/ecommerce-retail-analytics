@@ -1,0 +1,12 @@
+-- ============================================================
+-- Q2. Product Performance Analysis
+-- Business Question:
+-- Which product categories drive the most revenue and order volume?
+--
+-- This analysis evaluates:
+-- 1. Product category coverage
+-- 2. Order volume by product category
+-- 3. Revenue performance by product category
+-- 4. Average order value by product category
+-- 5. Revenue contribution of leading categories
+-- ============================================================
