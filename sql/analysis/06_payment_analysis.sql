@@ -4,7 +4,7 @@
 -- Which payment methods are most commonly used by customers?
 --
 -- Analysis Period:
--- January–August 2017 vs. January–August 2018
+-- January-August 2017 vs. January-August 2018
 -- =========================================================
 
 
@@ -21,13 +21,15 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
-    )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
 GROUP BY
     YEAR(o.order_purchase_timestamp)
@@ -49,15 +51,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_type
@@ -79,13 +83,15 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
-    )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
 GROUP BY
     YEAR(o.order_purchase_timestamp)
@@ -115,15 +121,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_type
@@ -134,7 +142,7 @@ ORDER BY
 
 -- =========================================================
 -- 5. Validate Monthly Paid Orders by Payment Method
--- Purpose: Analyze monthly payment method trends
+-- Purpose: Analyze monthly payment-method trends
 -- =========================================================
 
 SELECT
@@ -148,15 +156,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     MONTH(o.order_purchase_timestamp),
@@ -182,15 +192,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_type
@@ -217,15 +229,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_type
@@ -251,15 +265,17 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type <> 'not_defined'
+    AND p.payment_type <> 'not_defined'
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_type
@@ -270,7 +286,7 @@ ORDER BY
 
 -- =========================================================
 -- 9. Validate Credit Card Orders by Installment Count
--- Purpose: Analyze preferred credit card installment counts
+-- Purpose: Analyze preferred credit-card installment counts
 -- =========================================================
 
 SELECT
@@ -282,16 +298,18 @@ JOIN orders AS o
     ON p.order_id = o.order_id
 WHERE
     (
-        o.order_purchase_timestamp >= '2017-01-01'
-        AND o.order_purchase_timestamp < '2017-09-01'
+        (
+            o.order_purchase_timestamp >= '2017-01-01'
+            AND o.order_purchase_timestamp < '2017-09-01'
+        )
+        OR
+        (
+            o.order_purchase_timestamp >= '2018-01-01'
+            AND o.order_purchase_timestamp < '2018-09-01'
+        )
     )
-    OR
-    (
-        o.order_purchase_timestamp >= '2018-01-01'
-        AND o.order_purchase_timestamp < '2018-09-01'
-    )
-  AND p.payment_type = 'credit_card'
-  AND p.payment_installments > 0
+    AND p.payment_type = 'credit_card'
+    AND p.payment_installments > 0
 GROUP BY
     YEAR(o.order_purchase_timestamp),
     p.payment_installments
