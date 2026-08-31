@@ -8,7 +8,7 @@ The objective is to transform raw transactional data into meaningful business in
 
 ## Business Role
 
-The project simulates the responsibilities of a Business Data Analyst / BI Analyst, including:
+The project reflects the responsibilities of a Business Data Analyst / BI Analyst, including:
 
 * Data exploration and preparation
 * Data quality and relationship validation
