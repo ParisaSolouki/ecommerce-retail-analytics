@@ -1,48 +1,97 @@
-# E-commerce Retail Business Analytics Project
+# E-Commerce Retail Business Analytics Project
 
 ## Project Overview
 
-This project is an end-to-end business analytics solution for an online retail company.  
-The goal is to analyze sales performance, customer behavior, product performance, operational efficiency, and customer satisfaction using Python, SQL, and Power BI.
+This project is an end-to-end business intelligence solution based on the Brazilian Olist e-commerce dataset.
+
+The objective is to transform raw transactional data into meaningful business insights using Python, SQL, and Power BI. The analysis compares performance during January–August 2017 and January–August 2018.
 
 ## Business Role
 
-The project simulates the work of a Business Data Analyst / BI Analyst.
+The project simulates the responsibilities of a Business Data Analyst / BI Analyst, including:
 
-## Business Objectives
+* Data exploration and preparation
+* Data quality and relationship validation
+* Business KPI development
+* SQL-based analysis and validation
+* Interactive dashboard development
+* Business insight communication
 
-The analysis focuses on answering the following business questions:
+## Business Questions
 
-- How are sales changing over time?
-- Which product categories generate the highest revenue?
-- Who are the highest-value customers?
-- How many customers are repeat customers?
-- Are delivery delays affecting customer satisfaction?
-- Which regions generate the most sales?
-- Which products or categories receive lower review scores?
+The project answers the following questions:
+
+1. How did sales performance change over time?
+2. Which product categories generated the highest revenue and sales volume?
+3. Which sellers contributed most to revenue and orders?
+4. How efficiently were orders fulfilled and delivered?
+5. How did delivery performance affect customer satisfaction?
+6. Which payment methods were most commonly used by customers?
 
 ## Project Scope
 
-This project focuses on:
+The analysis covers:
 
-- Sales and revenue analytics
-- Customer analytics
-- Product performance analytics
-- Operational and delivery performance
-- Customer satisfaction analysis
+* Sales and revenue performance
+* Product category performance
+* Seller contribution and performance
+* Order fulfillment and delivery efficiency
+* Customer satisfaction and review scores
+* Customer payment behavior and preferences
 
-## Tools
+## Analysis Period
 
-- Python for data exploration and preprocessing
-- SQL for business analysis
-- Power BI for dashboarding and reporting
-- GitHub for version control and portfolio documentation
+The primary comparison period is:
+
+* January–August 2017
+* January–August 2018
+
+Using the same months for both years ensures a consistent year-over-year comparison.
+
+## Tools and Technologies
+
+* **Python and pandas:** data exploration, quality assessment, and preparation
+* **Jupyter Notebook:** documented analytical workflow
+* **MySQL and SQL:** business analysis and KPI validation
+* **DBeaver:** SQL query execution and result validation
+* **Power BI:** data modeling, DAX measures, dashboard development, and reporting
+* **Git and GitHub:** version control and portfolio documentation
+
+## Dashboard Pages
+
+The final Power BI report contains seven pages:
+
+1. Executive Overview
+2. Sales Performance
+3. Product Performance
+4. Seller Performance
+5. Delivery Performance
+6. Customer Satisfaction
+7. Payment Analysis
+
+## Key Performance Indicators
+
+The project includes KPIs related to:
+
+* Total revenue
+* Total orders
+* Average order value
+* Year-over-year growth
+* Product revenue and items sold
+* Seller revenue and orders
+* Active sellers
+* Fulfillment, shipping, and delivery time
+* On-time delivery rate
+* Average review score
+* Positive and negative review rates
+* Payment-method usage and order share
 
 ## Expected Deliverables
 
-- Cleaned business dataset
-- SQL database and analysis scripts
-- Power BI dashboards
-- KPI definitions
-- Business insights and recommendations
-- Portfolio-ready GitHub repository
+* Documented data exploration and preparation notebooks
+* Processed data required for analysis
+* SQL analysis and KPI-validation scripts
+* Interactive Power BI report
+* Final dashboard images
+* Business insights for each analytical area
+* Portfolio-ready GitHub repository
