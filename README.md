@@ -144,7 +144,9 @@ The complete Power BI report is available here:
 
 ---
 
-## 2018 KPI Summary
+## January–August 2018 KPI Snapshot
+
+The following KPIs present the January–August 2018 results. Year-over-year changes discussed in the Key Findings compare these results with the equivalent January–August 2017 period.
 
 | KPI | Jan–Aug 2018 |
 | --- | ---: |
@@ -159,6 +161,8 @@ The complete Power BI report is available here:
 ---
 
 ## Key Findings
+
+Unless otherwise stated, the values below refer to January–August 2018, while year-over-year changes compare them with the equivalent January–August 2017 period.
 
 ### 1) Sales growth was primarily driven by order volume
 
